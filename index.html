@@ -1022,4 +1022,16 @@
 
   // Smooth nav background on scroll
   const nav = document.querySelector('nav');
-  window.addEventListener('s
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      nav.style.background = 'rgba(10, 10, 15, 0.95)';
+      nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.3)';
+    } else {
+      nav.style.background = 'rgba(10, 10, 15, 0.8)';
+      nav.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
